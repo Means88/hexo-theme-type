@@ -127,6 +127,11 @@ icp:
 # Use upyun | vercel | self
 footer_logo:
   use: self
+  upyun: '../img/upyun.png'
+  vercel: '../img/vercel-logotype-dark.svg'
+  self:
+    link: 'https://means88.com/'
+    src: 'https://means88.com/static/media/avatar.2316da1abd928fe5f335.jpeg'
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置
