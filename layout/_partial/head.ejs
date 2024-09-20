@@ -35,6 +35,7 @@
   <meta property="og:image" content="<%- url_for(config.cover || theme.header.img) %>" />
   <% } %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <!-- Title -->
   <%
   var title = [];
@@ -101,7 +102,7 @@
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>    
+    crossorigin=""></script>
   <% } %>
   <% if (page.layout =='gallery2' ){ %>
   <%- css(('css/gallery2')) %>
@@ -137,6 +138,8 @@
   <script src="/js/waline.js" defer></script>
   <link rel="stylesheet" href="<%- url_for('/css/waline.css') %>" />
   <% } %>
+  <!-- add rss alternative -->
+  <link rel="alternate" type="application/rss+xml" href="/rss">
   <!--Vercel Audiences Analytics-->
   <% if(theme.vercel_analytics.use == true) { %>
   <script defer src="<%- url_for('/va/script.js') %>"></script>
